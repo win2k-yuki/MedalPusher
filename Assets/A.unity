@@ -887,6 +887,7 @@ GameObject:
   - 65: {fileID: 570625206}
   - 23: {fileID: 570625205}
   - 54: {fileID: 570625209}
+  - 114: {fileID: 570625210}
   m_Layer: 0
   m_Name: Pusher
   m_TagString: Untagged
@@ -944,7 +945,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 570625204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.10000002, z: 10.46}
+  m_LocalPosition: {x: 0, y: 1.10000002, z: 11.5299997}
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -964,6 +965,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &570625210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570625204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a3ac9027e6a9e4884f87007545bd33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &610081494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,7 +2609,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2026373486}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -2721,7 +2733,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2062281763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.32999992, y: -4.19000006, z: 2.55999994}
+  m_LocalPosition: {x: 4.32999992, y: -4.19000006, z: 8.07999992}
   m_LocalScale: {x: 1.29999995, y: 1.29999995, z: 1.29999995}
   m_Children: []
   m_Father: {fileID: 430234455}
@@ -2733,7 +2745,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2062281763}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 4
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
