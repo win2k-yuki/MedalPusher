@@ -3,12 +3,18 @@ using System.Collections;
 
 public class SpawnerScript : MonoBehaviour {
     public GameObject coin;
+    public GameObject Leftwall;
+    public GameObject Rightwall;
+    float leftbrockerPositionX;
+    float rightbrockerPositionx;
     float moveSpeed = 8.0f;
 
     Rigidbody rb;
 	// Use this for initialization
 	void Start () {
         rb = this.GetComponent<Rigidbody>();
+        leftbrockerPositionX = Leftwall.transform.position.x;
+        rightbrockerPosition = Rightwall.transform.position.x;
 	}
 	
 	// Update is called once per frame
