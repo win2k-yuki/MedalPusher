@@ -14,7 +14,7 @@ public class SpawnerScript : MonoBehaviour {
 	void Start () {
         rb = this.GetComponent<Rigidbody>();
         leftbrockerPositionX = Leftwall.transform.position.x;
-        rightbrockerPosition = Rightwall.transform.position.x;
+        rightbrockerPositionX = Rightwall.transform.position.x;
 	}
 	
 	// Update is called once per frame
