@@ -15,7 +15,7 @@ GameObject:
   - 54: {fileID: 5434644}
   m_Layer: 0
   m_Name: 1point coin
-  m_TagString: Untagged
+  m_TagString: 1coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

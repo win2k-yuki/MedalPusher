@@ -14,7 +14,7 @@ GameObject:
   - 54: {fileID: 5492928}
   m_Layer: 0
   m_Name: 300point capsules
-  m_TagString: Untagged
+  m_TagString: 300cap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

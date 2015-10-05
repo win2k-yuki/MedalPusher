@@ -15,7 +15,7 @@ GameObject:
   - 64: {fileID: 6483124}
   m_Layer: 0
   m_Name: 3point coin
-  m_TagString: Untagged
+  m_TagString: 3coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

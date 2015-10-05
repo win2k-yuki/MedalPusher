@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - 1coin
+  - coin
+  - 3coin
+  - 10coin
+  - 100cap
+  - 300cap
   layers:
   - Default
   - TransparentFX
