@@ -4,11 +4,18 @@ using System.Collections;
 public class SaucerScript : MonoBehaviour {
     public GameObject scoreText;
     ScoreScript scoreS;
+    private AudioSource PlaySe;
+   // private AudioClip getcoin;
 	// Use this for initialization
 	void Start () {
         scoreS = scoreText.GetComponent<ScoreScript>();
+        PlaySe = this.GetComponent<AudioSource>();
+      //  getcoin = this.GetComponent<AudioClip>();
 	}
     void OnCollisionEnter(Collision colObjcet){
+        PlaySe.Stop();
+
+        PlaySe.PlayOneShot(PlaySe.clip);
         if (colObjcet.gameObject.tag == "1coin"){
             Destroy(colObjcet.gameObject);
             scoreS.addScore(1);

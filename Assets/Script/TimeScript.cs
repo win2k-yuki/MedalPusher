@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class TimeScript : MonoBehaviour {
     public float initTime;
-    float currentTime;
+    public float currentTime;
     Text timeText;
 	// Use this for initialization
 	void Start () {
@@ -18,6 +18,9 @@ public class TimeScript : MonoBehaviour {
         currentTime -= Time.deltaTime;
         if (currentTime < 0) currentTime = 0;
         printTime((int)currentTime);
+        if (currentTime == 0) {
+            currentTime = -1;
+        }
 	}
     void printTime(int n){
         timeText.text = "Time:"+n.ToString();

@@ -36,7 +36,7 @@ public class SpawnerScript : MonoBehaviour {
         //向き
         Vector3 direction = new Vector3(x, 0, 0);
         rb.velocity = direction * moveSpeed;
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("z"))
         {
             Instantiate(coin, this.transform.position, this.transform.rotation);
             scoreS.subScore(1);
