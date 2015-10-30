@@ -38,8 +38,25 @@ public class SpawnerScript : MonoBehaviour {
         rb.velocity = direction * moveSpeed;
         if (Input.GetKeyDown("z"))
         {
+            
+            DropCoin();
+        }
+        if (Input.GetKeyDown("p")) {
+            StartCoroutine(DropDebug());
+            Debug.Log("自動デバッグ開始");
+            
+        }
+	}
+    void DropCoin() {
+        if (scoreS.currentScore > 0) {
             Instantiate(coin, this.transform.position, this.transform.rotation);
             scoreS.subScore(1);
         }
-	}
+    }
+    IEnumerator DropDebug() {
+        while(true){
+            DropCoin();
+            yield return new WaitForSeconds(0.2f);
+        }
+    }
 }

@@ -11,13 +11,16 @@ public class BonusSpawnerScript : MonoBehaviour {
     public GameObject cap300;
     public GameObject coin1;
     public bool Dropnow;
+    public int DropTypeCheck;
     bool firstdrop = true;
+    public bool BonusTextActivate = false;
     void Start() {
     }
     void Update() {
         if (firstdrop == true) {
             //StartCoroutine(drop(10, 40));
             firstdrop = false;
+            BonusTextActivate = false;
         }
     }
     //droptype おっきい方 300 小さい方1
@@ -76,6 +79,7 @@ public class BonusSpawnerScript : MonoBehaviour {
                 yield return new WaitForSeconds(0.1f);
             }
         }
+        BonusTextActivate = true;
         Dropnow = false;
     }
 }

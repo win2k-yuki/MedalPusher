@@ -7,7 +7,7 @@ public class BonusChanceScript : MonoBehaviour {
     public GameObject Lotterytext;
     LotteryScript Lottery;
     public int InitLevel;
-    Slider bonusValue;
+    public Slider bonusValue;
     int currentLevel;
     Text Bonusleveltext;
     public bool addtrue=true;
@@ -22,7 +22,7 @@ public class BonusChanceScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (currentLevel >= 10) {
+        if (currentLevel >= bonusValue.maxValue) {
             Lottery.LotStart();
             currentLevel = 0;
             addtrue = false;

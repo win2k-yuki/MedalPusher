@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour {
     public int initScore;
-    int currentScore;
+    public int currentScore;
     Text scoreText;
 	// Use this for initialization
 	void Start () {
